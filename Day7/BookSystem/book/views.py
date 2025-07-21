@@ -65,4 +65,4 @@ class BookDetailAPIView(APIView):
             return Response({"detail": "Not found"}, status=status.HTTP_404_NOT_FOUND)
         
         book.delete()
-        return Response({'message': 'product deleted'}, status=status.HTTP_204_NO_CONTENT)
+        return Response({'message': 'Book deleted'}, status=status.HTTP_204_NO_CONTENT)
